@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <assert.h>
 
 typedef struct node
 {
@@ -18,7 +19,7 @@ typedef struct{
 void initialize(stack* );
 void push(int, stack* );
 int pop(stack*);
-bool empty(stack*);
+void empty(stack*);
 bool full(stack*);
 
 #endif // __STACK_H_
